@@ -5,11 +5,15 @@ Projeto desenvolvido com o intuito de aprender novas técnicas de Html e CC3 cop
 
 <h2 >Screenshots 🚀</h2>
 
-<div diplay="flex" align-items="center">
-      <img src="/assets/images/desk.png" width="30%" alt="Screenshots Desktop"/>
-      <img src="/assets/images/tb.png" width="30%" alt="Screenshots Tablet"/>
-      <img src="/assets/images/mob.png" width="30%" alt=" Screenshots Mobile"/>
-</div>
+
+<h2 >Desktop</h2>
+<img src="/assets/images/desk.png" width="30%" alt="Screenshots Desktop"/>
+     
+<h2 >Tablet </h2>
+ <img src="/assets/images/tb.png" width="30%" alt="Screenshots Tablet"/>
+
+ <h2 >Mobile</h2>
+ <img src="/assets/images/mob.png" width="30%" alt=" Screenshots Mobile"/>
 
 <h2>Tecnologias 🚀</h2>
 
