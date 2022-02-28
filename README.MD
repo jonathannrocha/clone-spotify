@@ -7,8 +7,8 @@ Projeto desenvolvido com o intuito de aprender novas técnicas de Html e CC3 cop
 
 <div diplay="flex" align-items="center">
       <img src="/assets/images/desk.png" width="30%" alt="Screenshots Desktop"/>
-      <img src="/Assets/images/tb.png" width="30%" alt="Screenshots Tablet"/>
-      <img src="/Assets/images/mob.png" width="30%" alt=" Screenshots Mobile"/>
+      <img src="/assets/images/tb.png" width="30%" alt="Screenshots Tablet"/>
+      <img src="/assets/images/mob.png" width="30%" alt=" Screenshots Mobile"/>
 </div>
 
 <h2>Tecnologias 🚀</h2>
