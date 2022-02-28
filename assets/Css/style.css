@@ -37,11 +37,13 @@ header {
 .header .header-menu ul {
     display: flex;
     cursor: pointer;
+    transition: all 0.2s ease-in;
 }
 
 .header .header-menu ul li {
     list-style: none;
     padding: 28px 17px;
+    transition: all 0.2s ease-in;
 }
 
 .header .header-menu ul li a {
@@ -49,6 +51,7 @@ header {
     color: #FFF;
     font-weight: bold;
     font-size: 15px;
+    transition: all 0.2s ease-in;
 }
 
 .header .header-menu ul li:hover a {
@@ -317,17 +320,31 @@ footer nav {
 }
 
 @media(max-width:990px) {
+    /* criando o logo que vai ser adicionado no footer */
+    .header-menu nav ul div svg {
+        height: 30px;
+        fill: #FFF;
+    }
     .header-menu {
         display: none;
+        transition: all 0.2s ease-in;
     }
     .menu-mobile {
         display: block;
+    }
+    .menu-mobile div {
         transition: all 0.2s ease-in;
     }
-    .menu-mobile--1 {
+    .menu-mobile .menu-mobile--1 {
         transition: all 0.2s ease-in;
         background-color: #000 !important;
-        margin: 0;
+        margin: 0 !important;
+    }
+    .header-menu nav ul div {
+        z-index: 999;
+        color: #FFF;
+        position: fixed;
+        bottom: 20px;
     }
     .menu-mobile--0,
     .menu-mobile--2 {
@@ -338,13 +355,16 @@ footer nav {
         margin: 0;
     }
     .menu-mobile--0 {
+        transition: all 0.2s ease-in;
         transform: rotate(-45deg);
         margin: 0;
         margin-top: 8px;
     }
     .menu-mobile--2 {
+        transition: all 0.2s ease-in;
         transform: rotate(45deg);
         margin: 0;
+        margin-top: 1px !important;
     }
     .header .header-menu ul {
         flex-direction: column;
@@ -400,44 +420,61 @@ footer nav {
         font-size: 16px;
         font-weight: 400 !important;
     }
-    @media(max-width:768px) {
-        .footer--nav {
-            flex-direction: column;
-        }
-        .footer--nav dl {
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-        }
-        .footer--nav dt {
-            margin: 50px 0 22px 0;
-        }
-        .footer--nav dl dt {
-            margin: 50px 0 22px 0;
-        }
-        .footer-logo svg {
-            height: 26px;
-        }
-        .footer--widgets {
-            margin: 120px 15px 15px;
-        }
-        .city a,
-        .links a,
-        .links ul,
-        .links span {
-            font-size: 10px;
-        }
-        .links ul {
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-        footer {
-            padding: 50px 20px;
-        }
+    .header .header-menu ul {
+        width: 80%;
     }
-    @media(max-width:441px) {
-        .main-background {
-            background-image: none;
-        }
+}
+
+@media(max-width:768px) {
+    .footer--nav {
+        flex-direction: column;
+    }
+    .footer--nav dl {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .footer--nav dt {
+        margin: 50px 0 22px 0;
+    }
+    .footer--nav dl dt {
+        margin: 50px 0 22px 0;
+    }
+    .footer-logo svg {
+        height: 26px;
+    }
+    .footer--widgets {
+        margin: 120px 15px 15px;
+    }
+    .city a,
+    .links a,
+    .links ul,
+    .links span {
+        font-size: 10px;
+    }
+    .links ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    footer {
+        padding: 50px 20px;
+    }
+    .header .header-menu ul .secunday a {
+        font-size: 20px;
+    }
+}
+
+@media(max-width:441px) {
+    .header .header-menu ul .primary a {
+        font-size: 25px;
+    }
+    .header .header-menu ul .secunday a {
+        font-size: 16px;
+    }
+    .header .header-menu ul {
+        width: 100%;
+    }
+    .main-background {
+        background-image: none;
     }
 }
